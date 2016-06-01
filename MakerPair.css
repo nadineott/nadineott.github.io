@@ -1,0 +1,127 @@
+body {
+    background-color: white;    color: white;
+    background: linear-gradient(to right, #3366CC, white, white, white, white, white, white, white, white, white, #3366CC);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dataEntry {
+  display: block;
+  text-align: center;
+}
+
+.sprintLists {
+  display: block;
+  text-align: center;
+}
+
+form {
+  display:inline;
+}
+
+h3 {
+  font-family: 'Antic Slab', serif;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  color: #243ac7;
+}
+
+li {
+  list-style-type: none;
+  color: #243ac7;
+  font-size: 14px;
+}
+
+/*button {
+  display: inline-block;
+  margin: auto auto;
+  width:100px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 15px;
+  background: #3455d9;
+  padding: 5px 10px 5px 5px;
+  text-decoration: none;
+  margin-top: 5px;
+  border: 0;
+  outline:none;
+}
+
+button:hover {
+  background: #243ac7;
+  text-decoration: none;
+  border: 0;
+  outline:none;
+}*/
+
+.sprintName, .tooFewStudents {
+  font-size: 22px;
+  color: #243ac7;
+  font-size: 20px;
+}
+
+table {
+   margin: auto;
+   display: block;
+   width: 60%;
+   text-align: center;
+}
+
+tr {
+    display:table;
+    table-layout: fixed;
+    width:100%;
+}
+
+li {
+  color: black;
+}
+
+.tooFewStudents {
+  display: block;
+  font-size: 22px;
+  text-align: center;
+}
+
+td {
+  vertical-align: top;
+}
+.stepTwo {
+  display: block;
+  text-align: center;
+
+}
+/*BUTTON*/
+button.pair {
+  font-family: 'Antic Slab', serif;
+  background: url(http://i1379.photobucket.com/albums/ah144/NadineOtt/blueCheckerboard_zpslbjgxgf0.png);
+  margin: 0 auto;
+  background-position: 0 0;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  height: 58px;
+  width: 155px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 58px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+/*Transition*/
+  -webkit-transition: All 0.8s ease;
+  -moz-transition: All 0.8s ease;
+  -o-transition: All 0.8s ease;
+  -ms-transition: All 0.8s ease;
+  transition: All 0.8s ease;
+}
+
+
+button.pair:hover {
+  background-position: 0 150px;
+}

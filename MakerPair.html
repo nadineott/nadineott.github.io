@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<head>
+  <title> 
+    MakerPair
+  </title>
+  <link rel= "stylesheet" href="MakerPair.css" type="text/css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="MakerPairController.js"></script>
+</head>
+
+<body>
+    <div class = "logo"> <img src = "http://i1379.photobucket.com/albums/ah144/NadineOtt/Screen%20Shot%202016-02-08%20at%207.05.17%20PM_zpskyp7z6za.png"> <br><br></div>
+
+<div ng-app="MakerPairApp">
+  <div ng-controller = "MakerPairController">
+
+<table>
+  <td>
+      <div class = "dataEntry" ng-show ="show==1">
+      <h3> Step 1: Enter student names <h3>
+      <form>
+      1.&#160;&#160;&#160;<input type="text"><br>
+      2.&#160;&#160;&#160;<input type="text"><br>
+      3.&#160;&#160;&#160;<input type="text"><br>
+      4.&#160;&#160;&#160;<input type="text"><br>
+      5.&#160;&#160;&#160;<input type="text"><br>
+
+      6.&#160;&#160;&#160;<input type="text"><br>
+      7.&#160;&#160;&#160;<input type="text"><br>
+      8.&#160;&#160;&#160;<input type="text"><br>
+      9.&#160;&#160;&#160;<input type="text"><br>
+      10. <input type="text"><br>
+
+      11. <input type="text"><br>
+      12. <input type="text"><br>
+      13. <input type="text"><br>
+      14. <input type="text"><br>
+      15. <input type="text"><br>
+
+      16. <input type="text"><br>
+      17. <input type="text"><br>
+      18. <input type="text"><br>
+      19. <input type="text"><br>
+      20. <input type="text"><br>
+
+      21. <input type="text"><br>
+      22. <input type="text"><br>
+      23. <input type="text"><br>
+      24. <input type="text"><br>
+      25. <input type="text"><br>
+
+      </form>
+    </div>
+  </td>
+  <td>
+    <div class = "step2" ng-show = "show==1">
+      <h3> Step 2: <h3> <button class = "pair" ng-click = "showPairs()">Pair</button>
+    </div>
+  </td>
+</table>
+
+<div class = "tooFewStudents" ng-show = "show==2">
+  Sorry, 19 students are required
+  <br><br>
+  <img src = 'http://i1379.photobucket.com/albums/ah144/NadineOtt/sadDog_zpscdp6kupp.jpg'>
+</div>
+
+<div class = "sprintLists" ng-show ="show==0">
+
+  <table>
+
+    <tr>
+      <td>
+        <div class = "sprint1" ng-show = false>
+        <p class = "sprintName"> Sprint 1 </p>
+            <li ng-repeat="x in sprint1">
+                    {{ x }}
+            </li> 
+        </div>
+      </td>
+
+      <td>
+      <div class = "sprint2" ng-show = false >
+        <p class = "sprintName"> Sprint 2 </p>
+            <li ng-repeat="x in sprint2">
+                    {{ x }}
+            </li> 
+      </div>
+      </td>
+
+      <td>
+        <div class = "sprint3" ng-show = false >
+        <p class = "sprintName"> Sprint 3 </p>
+            <li ng-repeat="x in sprint3">
+                    {{ x }}
+            </li> 
+      </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class = "sprint4" ng-show = false >
+        <p class = "sprintName"> Sprint 4 </p>
+            <li ng-repeat="x in sprint4">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+
+      <td>
+        <div class = "sprint5" ng-show = false >
+        <p class = "sprintName"> Sprint 5 </p>
+            <li ng-repeat="x in sprint5">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+
+      <td>
+        <div class = "sprint6" ng-show = false >
+        <p class = "sprintName"> Sprint 6 </p>
+            <li ng-repeat="x in sprint6">
+                    {{ x }}
+            </li> 
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class = "sprint7" ng-show = false >
+        <p class = "sprintName"> Sprint 7 </p>
+            <li ng-repeat="x in sprint7">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+
+      <td>
+        <div class = "sprint8" ng-show = false >
+        <p class = "sprintName"> Sprint 8 </p>
+            <li ng-repeat="x in sprint8">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+
+      <td>
+        <div class = "sprint9" ng-show = false >
+        <p class = "sprintName"> Sprint 9 </p>
+            <li ng-repeat="x in sprint9">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class = "sprint10" ng-show = false >
+        <p class = "sprintName"> Sprint 10 </p>
+            <li ng-repeat="x in sprint10">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+
+      <td>
+        <div class = "sprint11" ng-show = false >
+        <p class = "sprintName"> Sprint 11 </p>
+            <li ng-repeat="x in sprint11">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+
+      <td>
+        <div class = "sprint12" ng-show = false >
+        <p class = "sprintName"> Sprint 12 </p>
+            <li ng-repeat="x in sprint12">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class = "sprint13" ng-show = false >
+        <p class = "sprintName"> Sprint 13 </p>
+            <li ng-repeat="x in sprint13">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+
+      <td>
+        <div class = "sprint14" ng-show = false >
+        <p class = "sprintName"> Sprint 14 </p>
+            <li ng-repeat="x in sprint14">
+                    {{ x }}
+            </li> 
+        </div>
+      </td>
+
+      <td>
+        <div class = "sprint15" ng-show = false >
+        <p class = "sprintName"> Sprint 15 </p>
+            <li ng-repeat="x in sprint15">
+                    {{ x }}
+            </li> 
+          </div>
+      </td>
+    </tr>
+
+  </table>
+  <br><br><br>
+
+  </div>
+</div>
+</body>
+
+</html>
+
+
+
+
